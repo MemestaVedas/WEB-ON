@@ -5,6 +5,7 @@ export type PillNavItem = {
     label: string;
     href: string;
     ariaLabel?: string;
+    icon?: React.ReactNode;
 };
 
 export interface PillNavProps {

@@ -1,5 +1,4 @@
 import FadeIn from './reactbits/FadeIn';
-import ShimmerButton from './reactbits/ShimmerButton';
 import RotatingText from './reactbits/RotatingText';
 
 export default function Hero() {

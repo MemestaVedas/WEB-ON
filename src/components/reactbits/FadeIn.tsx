@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState, ReactNode } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import type { ReactNode } from 'react';
 
 interface FadeInProps {
   children: ReactNode;
@@ -7,11 +8,11 @@ interface FadeInProps {
   className?: string;
 }
 
-export default function FadeIn({ 
-  children, 
-  delay = 0, 
+export default function FadeIn({
+  children,
+  delay = 0,
   direction = 'up',
-  className = '' 
+  className = ''
 }: FadeInProps) {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -39,7 +40,7 @@ export default function FadeIn({
 
   const getTransform = () => {
     if (isVisible) return 'translate(0, 0)';
-    
+
     switch (direction) {
       case 'up':
         return 'translate(0, 40px)';
