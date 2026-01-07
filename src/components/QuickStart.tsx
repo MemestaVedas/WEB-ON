@@ -97,9 +97,6 @@ npm run tauri dev`}
             <ShimmerButton variant="primary">
               Download Latest Release
             </ShimmerButton>
-            <ShimmerButton variant="secondary">
-              View Documentation
-            </ShimmerButton>
           </div>
         </FadeIn>
       </div>
